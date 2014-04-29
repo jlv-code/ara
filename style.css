@@ -1,0 +1,53 @@
+/*
+Theme Name: Agencia de Representación de Artistas - 2014
+Author: jlv
+Author URI: jlvdesign.blogspot.com
+Version: 1.0
+Description: Wordpress theme responsive
+*/
+
+@import url('static/css/normalize.css');
+
+body {
+	font-family: Arial;
+	background-color: #fff;
+}
+
+	#wrap {
+		background-image: url(static/images/bg.png);
+		background-repeat: repeat-x;
+		background-position: center top;
+	}
+
+		/* STYLES HEADER SECTION
+		 */
+
+		#header {
+			display: inline-block;
+			margin: 30px 0 0 0;
+			width: 100%;
+			min-height: 350px;
+			background-color: #fff;
+		}
+
+			#header .logo {}
+
+		/* STYLES CONTENT SECTION
+		 */
+
+		#content {
+			display: inline-block;
+			width: 100%;
+			min-height: 550px;
+			background-color: #fff;
+		}
+
+		/* STYLES FOOTER SECTION
+		 */
+
+		#footer {
+			display: inline-block;
+			width: 100%;
+			min-height: 350px;
+			background-color: #fff;
+		}
