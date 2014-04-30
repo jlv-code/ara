@@ -39,4 +39,5 @@
 				</div>
 			</div>
 		</header>
-		<div id="content">
+		<div id="content"> <!-- ## Begins content -->
+			<div class="inner-content"> <!-- ## Begins inner-content -->

@@ -16,14 +16,14 @@ Description: Wordpress theme responsive
 body {
 	font-family: Arial;
 	background-color: #fff;
+	background-image: url(static/images/bg.png);
+	background-repeat: repeat-x;
+	background-position: center top;
 }
 
 	#wrap {
 		display: inline-block;
 		width: 100%;
-		background-image: url(static/images/bg.png);
-		background-repeat: repeat-x;
-		background-position: center top;
 	}
 
 		/* STYLES HEADER SECTION
@@ -33,7 +33,6 @@ body {
 			float: left;
 			margin: 30px 0 0 0;
 			width: 100%;
-			min-height: 350px;
 			background-color: #fff;
 		}
 
@@ -95,11 +94,29 @@ body {
 		 */
 
 		#content {
+			margin: 50px 0 0 0;
 			float: left;
 			width: 100%;
-			min-height: 550px;
-			background-color: #fff;
+			min-height: 750px;
 		}
+
+			#content .inner-content {
+				width: 100%;
+			}
+
+				.inner-content .bg-squares {
+					width: 100%;
+					background: #fff;
+					text-align: center;
+				}
+
+					.bg-squares .inner-box {
+						display: inline-block;
+						padding: 30px 0;
+						width: 1000px;
+						font-size: 2em;
+						font-weight: 700;
+					}
 
 		/* STYLES FOOTER SECTION
 		 */
@@ -107,12 +124,67 @@ body {
 		#footer {
 			float: left;
 			width: 100%;
-			min-height: 350px;
-			background-color: #fff;
 		}
 
-@media screen and (max-width: 450px) {
+			#footer .inner-footer {
+				width: 100%;
+			}
 
+				.inner-footer .foot-one {
+					width: 100%;
+					background-color: #313131;
+					text-align: center;
+				}
+
+				.inner-footer .foot-two {
+					width: 100%;
+					min-height: 50px;
+					background-color: #fff;
+					text-align: center;
+				}
+
+					.foot-one .inner-foot,
+					.foot-two .inner-foot {
+						display: inline-block;
+						width: 1000px;
+					}
+
+
+@media screen and (max-width: 768px) {
+
+	.inner-header .logo .inner-logo {
+		width: 100%;
+	}
+
+		.inner-logo img {
+			width: 60%;
+			height: 60%;
+		}
+
+	.inner-header .menu nav {
+		width: 100%;
+	}
+
+		/*nav .menu-main-container,
+		nav .menu-main-container ul#menu-main,*/
+		nav .menu-main-container ul#menu-main li,
+		nav .menu-main-container ul#menu-main li a {
+			display: block;
+			width: 100%;
+		}
+
+	.bg-squares .inner-box {
+		width: 100%;
+	}
+
+	.foot-one .inner-foot,
+	.foot-two .inner-foot {
+		width: 100%;
+	}
+
+}
+
+/*@media screen and (min-width: 481px) and (max-width: 768px) {
 	.inner-header .logo .inner-logo {
 		width: 100%;
 	}
@@ -125,12 +197,19 @@ body {
 	.inner-header .menu nav {
 		width: 100%;
 	}
-		/*nav .menu-main-container,
-		nav .menu-main-container ul#menu-main,*/
+
 		nav .menu-main-container ul#menu-main li,
 		nav .menu-main-container ul#menu-main li a {
 			display: block;
 			width: 100%;
 		}
 
-}
+	.bg-squares .inner-box {
+		width: 100%;
+	}
+
+	.foot-one .inner-foot,
+	.foot-two .inner-foot {
+		width: 100%;
+	}
+}*/
