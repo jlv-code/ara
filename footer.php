@@ -4,7 +4,7 @@
 			<div class="inner-footer">
 				<div class="foot-one">
 					<div class="inner-foot">
-						<img src="<?php print get_template_directory_uri() ?>/static/images/logo.png" alt="ARA">
+						<img class="imglogo" src="<?php print get_template_directory_uri() ?>/static/images/logo.png" alt="ARA">
 					</div>
 					<div class="inner-foot">
 						<div class="info">
