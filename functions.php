@@ -14,6 +14,10 @@ add_theme_support('post-formats', array('aside', 'audio', 'chat', 'gallery', 'im
 // Añade la funcionalidad de Soporte de Thumbnails e Imagenes Destacadas
 add_theme_support('post-thumbnails');
 
+if ( function_exists( 'add_image_size' ) ) {
+	add_image_size('img-210x210', 210, 210, true);
+}
+
 // Añade menús al tema para personalizar su ubicación
 register_nav_menus(
 	array(
