@@ -290,13 +290,18 @@ body {
 			display: block;
 		}
 
-		nav .menu-main-container ul#menu-main li,
-		nav .menu-main-container ul#menu-main li a {
-			display: block;
+		nav .menu-main-container ul#menu-main {
+			text-align: center;
+		}
+
+		nav .menu-main-container ul#menu-main li {
+			display: inline-block;
 		}
 
 		nav .menu-main-container ul#menu-main li a {
-
+			padding: 8px 1px 2px 1px;
+			float: left;
+			font-size: .7em;
 		}
 
 	.bg-squares .inner-box {
@@ -312,6 +317,21 @@ body {
 			width: 60%;
 			height: 60%
 		}
+
+	.destacado-top ul li {
+
+		list-style: none;
+	}
+
+	.destacado-top ul li a img ,
+	.destacado-bottom ul li a img {
+		width: 80px;
+		height: 80px;
+		border: 5px solid #fff;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+	}
 
 }
 
