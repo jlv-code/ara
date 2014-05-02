@@ -6,8 +6,6 @@ Version: 1.0
 Description: Wordpress theme responsive
 */
 
-/*@import url('static/css/normalize.css');*/
-
 * {
 	margin: 0;
 	padding: 0;
@@ -47,7 +45,7 @@ body {
 
 					.inner-header .logo .inner-logo {
 						display: inline-block;
-						width: 60%;
+						width: 80%;
 					}
 
 				.inner-header .menu {
@@ -58,7 +56,7 @@ body {
 
 					.inner-header .menu nav {
 						display: inline-block;
-						width: 60%;
+						width: 80%;
 					}
 
 						.menu nav .menu-main-container {
@@ -114,9 +112,7 @@ body {
 					.bg-squares .inner-box {
 						display: inline-block;
 						padding: 30px 0;
-						width: 60%;
-						font-size: 2em;
-						font-weight: 700;
+						width: 80%;
 					}
 
 						.inner-box .destacado-top {
@@ -183,7 +179,7 @@ body {
 					.wrap-page article.page {
 						display: inline-block;
 						margin: 30px 0;
-						width: 60%;
+						width: 80%;
 						text-align: left;
 					}
 
@@ -252,7 +248,7 @@ body {
 					.foot-one .inner-foot,
 					.foot-two .inner-foot {
 						display: inline-block;
-						width: 60%;
+						width: 80%;
 					}
 						.inner-foot .info {
 							display: block;
@@ -323,13 +319,16 @@ body {
 
 @media screen and (max-width: 768px) {
 
+	body {
+		background-image: url(static/images/bg-mobile.png);
+	}
+
 	.inner-header .logo .inner-logo {
 		width: 100%;
 	}
 
 		.inner-logo img {
 			width: 60%;
-			height: 60%;
 		}
 
 	.inner-header .menu nav {
@@ -354,38 +353,45 @@ body {
 			font-size: .7em;
 		}
 
-	.bg-squares .inner-box {
-		width: 100%;
+	#content {
+		margin: 20px 0 0 0;
+		min-height: 280px;
 	}
+
+		.bg-squares .inner-box {
+			padding: 15px 0;
+			width: 100%;
+		}
+
+
+			.destacado-top ul li a,
+			.destacado-bottom ul li a {
+				border: 5px solid #fff;
+				-webkit-border-radius: 45px;
+				-moz-border-radius: 45px;
+				border-radius: 45px;
+			}
+
+				.destacado-top ul li a img,
+				.destacado-bottom ul li a img {
+					display: inherit;
+					width: 80px;
+					height: 80px;
+					border: none;
+				}
 
 	.foot-one .inner-foot,
 	.foot-two .inner-foot {
-		width: 100%;
+		width: 100%;	
 	}
 
 		.inner-foot img.imglogo {
 			width: 60%;
-			height: 60%
 		}
-
-	.destacado-top ul li {
-
-		list-style: none;
-	}
-
-	.destacado-top ul li a img ,
-	.destacado-bottom ul li a img {
-		width: 80px;
-		height: 80px;
-		border: 5px solid #fff;
-		-webkit-border-radius: 50%;
-		-moz-border-radius: 50%;
-		border-radius: 50%;
-	}
 
 }
 
-@media screen and (min-width: 769px) and (max-width: 880px) {
+/*@media screen and (min-width: 769px) and (max-width: 880px) {
 
 	.inner-header .logo .inner-logo {
 		width: 100%;
@@ -419,9 +425,9 @@ body {
 			height: 40%
 		}
 
-}
+}*/
 
-@media screen and (min-width: 881px) and (max-width: 1245px) {
+/*@media screen and (min-width: 881px) and (max-width: 1245px) {
 
 	.inner-header .logo .inner-logo {
 		width: 80%;
@@ -444,4 +450,4 @@ body {
 		width: 80%;
 	}
 
-}
+}*/
