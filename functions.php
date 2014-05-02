@@ -1,6 +1,6 @@
 <?php 
 
-define('MIPPCI', 1.0);
+define('ARA', 1.0);
 
 // Añade la posibilidad de RSS dentro del Sitio Web
 add_theme_support('automatic-feed-links');
@@ -33,13 +33,10 @@ function ara_styles_scripts() {
 	endif;
 
 	// Añade las Hojas de Estilos
-	wp_enqueue_style( 'mippci_css_1', get_template_directory_uri() . '/style.css', '10000', 'all' );
-	//wp_enqueue_style( 'mippci_global', get_template_directory_uri() . '/style.css', '10000', 'all' );
-	//wp_enqueue_style( 'mippci_global', get_template_directory_uri() . '/style.css', '10000', 'all' );
-	//wp_enqueue_style( 'mippci_global', get_template_directory_uri() . '/style.css', '10000', 'all' );
+	wp_enqueue_style( 'ara_css_1', get_template_directory_uri() . '/style.css', '10000', 'all' );
 			
 	// Añade JavaScripts
-	//wp_enqueue_script( 'mippci_js_1', get_template_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ), MIPPCI, true );
+	//wp_enqueue_script( 'mippci_js_1', get_template_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ), ARA, true );
 }
 add_action( 'wp_enqueue_scripts', 'ara_styles_scripts' );
 

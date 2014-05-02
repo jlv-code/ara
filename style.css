@@ -47,7 +47,7 @@ body {
 
 					.inner-header .logo .inner-logo {
 						display: inline-block;
-						width: 80%;
+						width: 60%;
 					}
 
 				.inner-header .menu {
@@ -58,7 +58,7 @@ body {
 
 					.inner-header .menu nav {
 						display: inline-block;
-						width: 80%;
+						width: 60%;
 					}
 
 						.menu nav .menu-main-container {
@@ -114,7 +114,7 @@ body {
 					.bg-squares .inner-box {
 						display: inline-block;
 						padding: 30px 0;
-						width: 80%;
+						width: 60%;
 						font-size: 2em;
 						font-weight: 700;
 					}
@@ -173,6 +173,56 @@ body {
 											border-radius: 107px;
 										}
 
+				.inner-content .wrap-page {
+					display: block;
+					width: 100%;
+					background-color: #fff;
+					text-align: center;
+				}
+
+					.wrap-page article.page {
+						display: inline-block;
+						margin: 30px 0;
+						width: 60%;
+						text-align: left;
+					}
+
+						article.page h1 {
+							display: block;
+							margin: 0 0 20px 0;
+							width: 100%;
+							color: #333;
+							font-size: 1.6em;
+						}
+
+						article.page section.details {
+							margin: 0;
+							float: left;
+							width: 70%;
+						}
+
+							section.details .content {
+								display: block;
+							}
+
+								section.details .content iframe {
+									display: inherit;
+								}
+
+								section.details .content p {
+									margin: 20px 0 0 0;
+									font-size: 1em;
+								}
+
+						article.page aside.page-sidebar {
+							margin: 0 0 0 3%;
+							float: left;
+							width: 27%;
+							min-height: 400px;
+							background-color: #eee;
+						}
+				
+
 		/* STYLES FOOTER SECTION
 		 */
 
@@ -202,7 +252,7 @@ body {
 					.foot-one .inner-foot,
 					.foot-two .inner-foot {
 						display: inline-block;
-						width: 80%;
+						width: 60%;
 					}
 						.inner-foot .info {
 							display: block;
@@ -368,5 +418,30 @@ body {
 			width: 40%;
 			height: 40%
 		}
+
+}
+
+@media screen and (min-width: 881px) and (max-width: 1245px) {
+
+	.inner-header .logo .inner-logo {
+		width: 80%;
+	}
+
+	.inner-header .menu nav {
+		width: 80%;
+	}
+
+	.bg-squares .inner-box {
+		width: 80%;
+	}
+
+	.wrap-page article.page {
+		width: 80%;
+	}
+
+	.foot-one .inner-foot,
+	.foot-two .inner-foot {
+		width: 80%;
+	}
 
 }
