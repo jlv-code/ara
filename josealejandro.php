@@ -1,28 +1,39 @@
-<?php // Template Name: Artista - José A. Deldago ?>
-
 <?php get_header() ?>
 
 <div class="wrap-page">
-
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post() ?>
 	<article class="page">
-		<h1>José Alejandro Delgado</h1>
+		<h1><?php the_title() ?></h1>
 		<section class="details">
 			<div class="content">
-				<iframe width="100%" height="400" src="//www.youtube.com/embed/OLMelqRyjXU" frameborder="0" allowfullscreen></iframe>
-				<p><strong>Cantautor.</strong></p>
-				<p><strong>Caracas-Venezuela, 1980.</strong></p>
-				<p>Luego de formarse empíricamente en la escuela de la calle, a su paso por agrupaciones de música popular y tradicional venezolana y latinoamericana, y de haber aventurado en montajes teatrales como músico y actor, emprende su camino como cantautor en el 2005 con el disco "La Ventana". En el 2008 graba "Canciones y poemas" que es resultado de su acercamiento a la poesía venezolana de Palomares, Gerbasi, Valera Mora, entre otros.</p>
-				<p>En el 2010 crea Producciones A Pedal y Bomba, plataforma alternativa para la producción independiente, con la que materializa sus dos recientes producciones discográficas "A Pedal y Bomba" (2010) y “Rueda Libre” (2012) con el apoyo del Centro Nacional del Disco.</p>
-				<p>Ha participado en varios colectivos artísticos como La Liga y La Cantera y es promotor de la Red Artística Independiente Tribu Caracas.</p>
-				<p>Produce y conduce el programa “Se nos cae la escalera”, espacio de producción nacional independiente que transmite por 107.9 FM los sábado de 3:00 a 4:00 pm.</p>
-				<p>Ha llevado su música a varios festivales y giras por Europa, Norte y Sur América.</p>
-				<p>Venezuela Sonora:</p>
-				<p>Con el fin de abrir espacios internacionales para la música venezolana se aventura en una gira que tendrá por escenario inicial el continente europeo entre mayo y junio del 2014. Ideada por Producciones A Pedal y Bomba con el apoyo del Ministerio del Poder Popular para la Cultura y el Ministerio del Poder Popular para las Relaciones Exteriores Venezolanos, la gira Venezuela Sonora recorrerá las ciudades Bilbao, Madrid, Valencia, Barcelona, Belgrado, Nicosia, París, Moscú, Berlín y Atenas. En octubre y noviembre del 2014 la gira tendrá por escenario el cono suramericano.</p>
+			<figure>
+				<?php the_post_thumbnail('medium') ?>
+			</figure>
+			<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.0";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+			<div class="fb-like" data-href="<?php the_permalink() ?>" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
+			<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/147296170&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
 			</div>
+			<aside class="summary">
+				<div class="bio">
+					<?php the_content() ?>
+				</div>
+				<div class="discography">
+					<h1>Discografía</h1>
+					<ul>
+						<li><a href="#"><img src="<?php print get_template_directory_uri() ?>/static/images/covers/jad-rueda-libre-180.jpg" alt="dico"></a></li>
+					</ul>
+				</div>
+			</aside>
 		</section>
-		<aside class="page-sidebar"></aside>
 	</article>
-
+<?php endwhile; endif; ?>
 </div>
 
 <?php get_footer() ?>

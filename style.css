@@ -12,16 +12,19 @@ Description: Wordpress theme responsive
 }
 
 body {
+	margin: 0 auto;
 	font-family: Arial;
-	background-color: #fff;
-	background-image: url(static/images/bg.png);
-	background-repeat: repeat-x;
-	background-position: center top;
+	text-align: center;
 }
 
 	#wrap {
 		display: inline-block;
-		width: 100%;
+		width: 1000px;
+		background-color: #fff;
+		background-image: url(static/images/bg.png);
+		background-repeat: repeat-x;
+		background-position: center top;
+		text-align: left;
 	}
 
 		/* STYLES HEADER SECTION
@@ -44,8 +47,7 @@ body {
 				}
 
 					.inner-header .logo .inner-logo {
-						display: inline-block;
-						width: 80%;
+						display: block;
 					}
 
 				.inner-header .menu {
@@ -55,8 +57,7 @@ body {
 				}
 
 					.inner-header .menu nav {
-						display: inline-block;
-						width: 80%;
+						display: block;
 					}
 
 						.menu nav .menu-main-container {
@@ -93,7 +94,7 @@ body {
 		 */
 
 		#content {
-			margin: 50px 0 0 0;
+			margin: 30px 0 0 0;
 			float: left;
 			width: 100%;
 			min-height: 750px;
@@ -101,6 +102,10 @@ body {
 
 			#content .inner-content {
 				width: 100%;
+				min-height: 720px;
+				background-image: url(static/images/bg.png);
+				background-repeat: repeat-x;
+				background-position: center -200px;
 			}
 
 				.inner-content .bg-squares {
@@ -111,11 +116,156 @@ body {
 
 					.bg-squares .inner-box {
 						display: inline-block;
-						padding: 30px 0;
-						width: 80%;
+						padding: 20px;
+						width: 960px;
+						text-align: left;
 					}
 
-						.inner-box .destacado-top {
+					.inner-box .side-left,
+					.inner-box .side-right {
+						float: left;
+					}
+
+					.inner-box .side-left {
+						width: 600px;
+					}
+
+						.inner-box .side-left .artists {
+							display: block;
+						}
+
+							.artists h1 {
+								margin: 0 20px 20px 0;
+								padding: 10px;
+								color: #333;
+								background-color: #fff;
+								font-size: 1.5em;
+							}
+
+							.artists ul {
+								display: inline-block;
+								width: 100%;
+								list-style: none;
+							}
+
+								.artists ul li {
+									margin: 0 20px 20px 0;
+									float: left;
+									width: 180px;
+									background-color: #fff;
+									list-style: none;
+								}
+
+									.artists ul li a.img {
+										display: block;
+									}
+
+										.artists ul li a.img img {
+											display: block;
+											width: 178px;
+											height: 178px;
+											border: 1px solid #ccc;
+										}
+
+									.artists ul li a.title {
+										display: block;
+										margin: 10px 0 0 0;
+										height: 40px;
+										color: #555;
+										font-size: 1em;
+										text-decoration: none;
+										text-align: center;
+									}
+
+						.inner-box .side-left .discography {
+							display: block;
+						}
+
+							.discography h1 {
+								margin: 0 20px 20px 0;
+								padding: 10px;
+								color: #333;
+								background-color: #fff;
+								font-size: 1.5em;
+							}
+
+							.discography ul {
+								display: inline-block;
+								width: 100%;
+								list-style: none;
+							}
+
+								.discography ul li {
+									margin: 0 20px 20px 0;
+									float: left;
+									width: 100px;
+									background-color: #555;
+									list-style: none;
+								}
+
+									.discography ul li a {
+										display: block;
+									}
+
+										.discography ul li a img {
+											display: block;
+											width: 98px;
+											height: 98px;
+											border: 1px solid #555;
+										}
+
+					.inner-box .side-right {
+						width: 360px;
+					}
+
+						.side-right  .news {
+							display: block;
+						}
+
+							.news h1 {
+								margin: 0 0 20px 0;
+								padding: 10px;
+								color: #333;
+								background-color: #fff;
+								font-size: 1.5em;
+							}
+
+							.news ul {
+								display: inline-block;
+								width: 100%;
+								list-style: none;
+							}
+
+								.news ul li {
+									display: block;
+									margin: 0 0 5px 0;
+									padding: 10px;
+									background-color: #fff;
+									list-style: none;
+								}
+
+									.news ul li span {
+										color: #777;
+										font-size: .8em;
+									}
+
+									.news ul li a.title {
+										display: block;
+										color: #555;
+										font-size: 1em;
+										text-decoration: none;
+										text-align: left;
+									}
+
+						.side-right  .featured-video {
+							display: block;
+						}
+
+							.featured-video iframe {
+								margin: 20px 0 0 0;
+							}
+
+						/*.inner-box .destacado-top {
 							display: block;
 						}
 
@@ -167,19 +317,20 @@ body {
 											-webkit-border-radius: 107px;
 											-moz-border-radius: 107px;
 											border-radius: 107px;
-										}
+										}*/
 
 				.inner-content .wrap-page {
-					display: block;
-					width: 100%;
+					display: inline-block;
+					padding: 20px 0 50px 0;
+					width: 1000px;
 					background-color: #fff;
 					text-align: center;
 				}
 
 					.wrap-page article.page {
 						display: inline-block;
-						margin: 30px 0;
-						width: 80%;
+						margin: 0;
+						width: 100%;
 						text-align: left;
 					}
 
@@ -194,30 +345,84 @@ body {
 						article.page section.details {
 							margin: 0;
 							float: left;
-							width: 70%;
+							width: 100%;
 						}
 
 							section.details .content {
-								display: block;
+								margin: 0;
+								float: left;
+								width: 400px;
 							}
 
+								section.details .content figure {
+									display: block;
+									margin: 0 0 30px 0;
+								}
+									section.details .content figure img {
+										display: block;
+									}
+
+								section.details .content .fb-like {
+									display: block;
+									margin: 0 0 30px 0;
+								}
+
 								section.details .content iframe {
-									display: inherit;
+									display: block;
 								}
 
-								section.details .content p {
-									margin: 20px 0 0 0;
-									font-size: 1em;
-								}
 
-						article.page aside.page-sidebar {
-							margin: 0 0 0 3%;
-							float: left;
-							width: 27%;
-							min-height: 400px;
-							background-color: #eee;
-						}
-				
+							section.details aside.summary {
+								margin: 0 0 0 60px;
+								float: left;
+								width: 540px;
+							}
+
+								section.details aside.summary .bio {
+									display: block;
+								}
+					
+									section.details aside.summary .bio p {
+										display: block;
+										margin: 20px 0 0 0;
+									}
+
+									section.details aside.summary .discography {
+										display: block;
+										margin: 30px 0 0 0;
+									}
+
+										aside.summary .discography h1 {
+											margin: 0 0 20px 0;
+											padding: 0;	
+											color: #333;
+											font-size: 1.5em;
+										}
+
+										aside.summary .discography ul {
+											display: inline-block;
+											width: 100%;
+											list-style: none;
+										}
+
+											aside.summary .discography ul li {
+												margin: 0 20px 20px 0;
+												float: left;
+												width: 100px;
+												background-color: #555;
+												list-style: none;
+											}
+
+												aside.summary .discography ul li a {
+													display: block;
+												}
+
+													aside.summary .discography ul li a img {
+														display: block;
+														width: 98px;
+														height: 98px;
+														border: 1px solid #555;
+													}
 
 		/* STYLES FOOTER SECTION
 		 */
@@ -247,8 +452,7 @@ body {
 
 					.foot-one .inner-foot,
 					.foot-two .inner-foot {
-						display: inline-block;
-						width: 80%;
+						display: block;
 					}
 						.inner-foot .info {
 							display: block;
@@ -317,7 +521,7 @@ body {
 										}
 
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
 
 	body {
 		background-image: url(static/images/bg-mobile.png);
@@ -391,7 +595,7 @@ body {
 
 }
 
-/*@media screen and (min-width: 769px) and (max-width: 880px) {
+@media screen and (min-width: 769px) and (max-width: 880px) {
 
 	.inner-header .logo .inner-logo {
 		width: 100%;
@@ -425,9 +629,9 @@ body {
 			height: 40%
 		}
 
-}*/
+}
 
-/*@media screen and (min-width: 881px) and (max-width: 1245px) {
+@media screen and (min-width: 881px) and (max-width: 1245px) {
 
 	.inner-header .logo .inner-logo {
 		width: 80%;
